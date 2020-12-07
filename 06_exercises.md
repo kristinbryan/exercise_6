@@ -1,6 +1,6 @@
 ---
 title: 'Weekly Exercises #6'
-author: "Put your name here"
+author: "Kristin Bryan"
 output: 
   html_document:
     keep_md: TRUE
@@ -52,11 +52,6 @@ covid19 <- read_csv("https://raw.githubusercontent.com/nytimes/covid-19-data/mas
 fake_garden <- read_csv("https://github.com/llendway/scraping_etc/blob/main/2020_harvest.csv")
 
 Groceries_dataset <- read_csv("Groceries_dataset.csv")
-
-data_site <- 
-  "https://www.macalester.edu/~dshuman1/data/112/2014-Q4-Trips-History-Data.rds" 
-Trips <- readRDS(gzcon(url(data_site)))
-Stations<-read_csv("http://www.macalester.edu/~dshuman1/data/112/DC-Stations.csv")
 ```
 
 ## Put your homework on GitHub!
@@ -117,7 +112,7 @@ gt_table
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#crzwowuxxc .gt_table {
+#ngsfhopjce .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -142,7 +137,7 @@ gt_table
   border-left-color: #D3D3D3;
 }
 
-#crzwowuxxc .gt_heading {
+#ngsfhopjce .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -154,7 +149,7 @@ gt_table
   border-right-color: #D3D3D3;
 }
 
-#crzwowuxxc .gt_title {
+#ngsfhopjce .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -164,7 +159,7 @@ gt_table
   border-bottom-width: 0;
 }
 
-#crzwowuxxc .gt_subtitle {
+#ngsfhopjce .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -174,13 +169,13 @@ gt_table
   border-top-width: 0;
 }
 
-#crzwowuxxc .gt_bottom_border {
+#ngsfhopjce .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#crzwowuxxc .gt_col_headings {
+#ngsfhopjce .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -195,7 +190,7 @@ gt_table
   border-right-color: #D3D3D3;
 }
 
-#crzwowuxxc .gt_col_heading {
+#ngsfhopjce .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -215,7 +210,7 @@ gt_table
   overflow-x: hidden;
 }
 
-#crzwowuxxc .gt_column_spanner_outer {
+#ngsfhopjce .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -227,15 +222,15 @@ gt_table
   padding-right: 4px;
 }
 
-#crzwowuxxc .gt_column_spanner_outer:first-child {
+#ngsfhopjce .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#crzwowuxxc .gt_column_spanner_outer:last-child {
+#ngsfhopjce .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#crzwowuxxc .gt_column_spanner {
+#ngsfhopjce .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -247,7 +242,7 @@ gt_table
   width: 100%;
 }
 
-#crzwowuxxc .gt_group_heading {
+#ngsfhopjce .gt_group_heading {
   padding: 8px;
   color: #333333;
   background-color: #FFFFFF;
@@ -269,7 +264,7 @@ gt_table
   vertical-align: middle;
 }
 
-#crzwowuxxc .gt_empty_group_heading {
+#ngsfhopjce .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -284,15 +279,15 @@ gt_table
   vertical-align: middle;
 }
 
-#crzwowuxxc .gt_from_md > :first-child {
+#ngsfhopjce .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#crzwowuxxc .gt_from_md > :last-child {
+#ngsfhopjce .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#crzwowuxxc .gt_row {
+#ngsfhopjce .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -311,7 +306,7 @@ gt_table
   overflow-x: hidden;
 }
 
-#crzwowuxxc .gt_stub {
+#ngsfhopjce .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -323,7 +318,7 @@ gt_table
   padding-left: 12px;
 }
 
-#crzwowuxxc .gt_summary_row {
+#ngsfhopjce .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -333,7 +328,7 @@ gt_table
   padding-right: 5px;
 }
 
-#crzwowuxxc .gt_first_summary_row {
+#ngsfhopjce .gt_first_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -343,7 +338,7 @@ gt_table
   border-top-color: #D3D3D3;
 }
 
-#crzwowuxxc .gt_grand_summary_row {
+#ngsfhopjce .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -353,7 +348,7 @@ gt_table
   padding-right: 5px;
 }
 
-#crzwowuxxc .gt_first_grand_summary_row {
+#ngsfhopjce .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -363,11 +358,11 @@ gt_table
   border-top-color: #D3D3D3;
 }
 
-#crzwowuxxc .gt_striped {
+#ngsfhopjce .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#crzwowuxxc .gt_table_body {
+#ngsfhopjce .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -376,7 +371,7 @@ gt_table
   border-bottom-color: #D3D3D3;
 }
 
-#crzwowuxxc .gt_footnotes {
+#ngsfhopjce .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -390,13 +385,13 @@ gt_table
   border-right-color: #D3D3D3;
 }
 
-#crzwowuxxc .gt_footnote {
+#ngsfhopjce .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding: 4px;
 }
 
-#crzwowuxxc .gt_sourcenotes {
+#ngsfhopjce .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -410,46 +405,46 @@ gt_table
   border-right-color: #D3D3D3;
 }
 
-#crzwowuxxc .gt_sourcenote {
+#ngsfhopjce .gt_sourcenote {
   font-size: 90%;
   padding: 4px;
 }
 
-#crzwowuxxc .gt_left {
+#ngsfhopjce .gt_left {
   text-align: left;
 }
 
-#crzwowuxxc .gt_center {
+#ngsfhopjce .gt_center {
   text-align: center;
 }
 
-#crzwowuxxc .gt_right {
+#ngsfhopjce .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#crzwowuxxc .gt_font_normal {
+#ngsfhopjce .gt_font_normal {
   font-weight: normal;
 }
 
-#crzwowuxxc .gt_font_bold {
+#ngsfhopjce .gt_font_bold {
   font-weight: bold;
 }
 
-#crzwowuxxc .gt_font_italic {
+#ngsfhopjce .gt_font_italic {
   font-style: italic;
 }
 
-#crzwowuxxc .gt_super {
+#ngsfhopjce .gt_super {
   font-size: 65%;
 }
 
-#crzwowuxxc .gt_footnote_marks {
+#ngsfhopjce .gt_footnote_marks {
   font-style: italic;
   font-size: 65%;
 }
 </style>
-<div id="crzwowuxxc" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
+<div id="ngsfhopjce" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
   <thead class="gt_header">
     <tr>
       <th colspan="5" class="gt_heading gt_title gt_font_normal" style>Lisa's 2020 Garden Harvest</th>
@@ -5946,37 +5941,41 @@ gt_table
 
 
 ```r
-g1 <- Trips %>% 
-  ggplot(aes(x = sdate)) + 
-  geom_density() +
-  labs(x = "", y = "", title = "Density of Bike Rentals over Time")
+g1 <- garden_harvest %>% 
+  filter(vegetable == "tomatoes") %>% 
+  ggplot(aes(date)) +
+  labs(title = "First", subtitle = "2020 Tomato Harvest", x = "Date", y = "Count") +
+  geom_histogram(fill = "tomato", color = "white") + 
+  theme_minimal()
 
-g2 <- Trips %>% 
-  mutate(decimal_time = hour(sdate) + (minute(sdate)/60)) %>% 
-  ggplot(aes(x = decimal_time)) + 
-  geom_density() + 
-  labs(x = "", y = "", title = "Average Daily Density of Bike Rentals")
+g2 <- garden_harvest %>% 
+  filter(vegetable == "tomatoes") %>% 
+  group_by(variety) %>% 
+  mutate(total_weight = sum(weight)) %>% 
+  group_by(date, variety) %>% 
+  summarize(daily_weight = sum(weight), 
+            total_weight) %>% 
+  ggplot(aes(x = date, y = daily_weight)) + 
+  labs(x = "", y = "", 
+       title = "Last", 
+       subtitle = "Daily Tomato Harvest") +
+  geom_point(color = "tomato") + 
+  geom_smooth(color = "gray37", se = FALSE, size = 0.5) + 
+  facet_wrap(vars(fct_reorder(variety, desc(total_weight)))) +
+  theme_minimal() + 
+  theme(panel.grid.major.x = element_blank())
 
-g3 <- Trips %>% 
-  mutate(decimal_time = hour(sdate) + (minute(sdate)/60),
-         week_day = wday(sdate, label = TRUE)) %>% 
-  ggplot(aes(x = decimal_time, fill = client)) + 
-  geom_density(color = NA, alpha = .5, position = position_stack()) + 
-  labs(x = "", y = "") + 
-  facet_wrap(vars(week_day))
-
-g4 <- Trips %>% 
-  mutate(weekend = ifelse(wday(sdate, label = TRUE) %in% c("Sat", "Sun"), "Weekend", "Weekday"), 
-         decimal_time = hour(sdate) + (minute(sdate)/60)) %>% 
-  ggplot(aes(x = decimal_time, fill = client)) + 
-  geom_density(color = NA, alpha = .5) + 
-  labs(x = "", y = "") + 
-  facet_wrap(vars(weekend))
-
-g1 | (g3/g4) + 
-  plot_annotation(title = "Bike Rental Patterns")
+(g1 | g2) + 
+  plot_annotation(title = "My First vs. Last Perfect Garden Graph") 
 ```
 
 ![](06_exercises_files/figure-html/unnamed-chunk-3-1.png)<!-- -->
 
+# GitHub Links
 
+**Rmd Link:** https://github.com/kristinbryan/exercise_6/blob/master/06_exercises.Rmd
+
+**md Link:** https://github.com/kristinbryan/exercise_6/blob/master/06_exercises.md
+
+**HTML Link:** https://github.com/kristinbryan/exercise_6/blob/master/06_exercises.html
+ 
