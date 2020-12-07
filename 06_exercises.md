@@ -83,8 +83,12 @@ Once your repository is created, you should always open your **project** rather 
 ## Warm-up exercises from tutorial
 
   2. Read in the fake garden harvest data. Find the data [here](https://github.com/llendway/scraping_etc/blob/main/2020_harvest.csv) and click on the `Raw` button to get a direct link to the data. 
+
+**Data loaded above**
   
   3. Read in this [data](https://www.kaggle.com/heeraldedhia/groceries-dataset) from the kaggle website. You will need to download the data first. Save it to your project/repo folder. Do some quick checks of the data to assure it has been read in appropriately.
+  
+**Data loaded above**
 
   4. CHALLENGE(not graded): Write code to replicate the table shown below (open the .html file to see it) created from the `garden_harvest` data as best as you can. When you get to coloring the cells, I used the following line of code for the `colors` argument:
   
@@ -112,7 +116,7 @@ gt_table
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#ngsfhopjce .gt_table {
+#xzejblaohs .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -137,7 +141,7 @@ gt_table
   border-left-color: #D3D3D3;
 }
 
-#ngsfhopjce .gt_heading {
+#xzejblaohs .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -149,7 +153,7 @@ gt_table
   border-right-color: #D3D3D3;
 }
 
-#ngsfhopjce .gt_title {
+#xzejblaohs .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -159,7 +163,7 @@ gt_table
   border-bottom-width: 0;
 }
 
-#ngsfhopjce .gt_subtitle {
+#xzejblaohs .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -169,13 +173,13 @@ gt_table
   border-top-width: 0;
 }
 
-#ngsfhopjce .gt_bottom_border {
+#xzejblaohs .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#ngsfhopjce .gt_col_headings {
+#xzejblaohs .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -190,7 +194,7 @@ gt_table
   border-right-color: #D3D3D3;
 }
 
-#ngsfhopjce .gt_col_heading {
+#xzejblaohs .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -210,7 +214,7 @@ gt_table
   overflow-x: hidden;
 }
 
-#ngsfhopjce .gt_column_spanner_outer {
+#xzejblaohs .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -222,15 +226,15 @@ gt_table
   padding-right: 4px;
 }
 
-#ngsfhopjce .gt_column_spanner_outer:first-child {
+#xzejblaohs .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#ngsfhopjce .gt_column_spanner_outer:last-child {
+#xzejblaohs .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#ngsfhopjce .gt_column_spanner {
+#xzejblaohs .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -242,7 +246,7 @@ gt_table
   width: 100%;
 }
 
-#ngsfhopjce .gt_group_heading {
+#xzejblaohs .gt_group_heading {
   padding: 8px;
   color: #333333;
   background-color: #FFFFFF;
@@ -264,7 +268,7 @@ gt_table
   vertical-align: middle;
 }
 
-#ngsfhopjce .gt_empty_group_heading {
+#xzejblaohs .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -279,15 +283,15 @@ gt_table
   vertical-align: middle;
 }
 
-#ngsfhopjce .gt_from_md > :first-child {
+#xzejblaohs .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#ngsfhopjce .gt_from_md > :last-child {
+#xzejblaohs .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#ngsfhopjce .gt_row {
+#xzejblaohs .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -306,7 +310,7 @@ gt_table
   overflow-x: hidden;
 }
 
-#ngsfhopjce .gt_stub {
+#xzejblaohs .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -318,7 +322,7 @@ gt_table
   padding-left: 12px;
 }
 
-#ngsfhopjce .gt_summary_row {
+#xzejblaohs .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -328,7 +332,7 @@ gt_table
   padding-right: 5px;
 }
 
-#ngsfhopjce .gt_first_summary_row {
+#xzejblaohs .gt_first_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -338,7 +342,7 @@ gt_table
   border-top-color: #D3D3D3;
 }
 
-#ngsfhopjce .gt_grand_summary_row {
+#xzejblaohs .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -348,7 +352,7 @@ gt_table
   padding-right: 5px;
 }
 
-#ngsfhopjce .gt_first_grand_summary_row {
+#xzejblaohs .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -358,11 +362,11 @@ gt_table
   border-top-color: #D3D3D3;
 }
 
-#ngsfhopjce .gt_striped {
+#xzejblaohs .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#ngsfhopjce .gt_table_body {
+#xzejblaohs .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -371,7 +375,7 @@ gt_table
   border-bottom-color: #D3D3D3;
 }
 
-#ngsfhopjce .gt_footnotes {
+#xzejblaohs .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -385,13 +389,13 @@ gt_table
   border-right-color: #D3D3D3;
 }
 
-#ngsfhopjce .gt_footnote {
+#xzejblaohs .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding: 4px;
 }
 
-#ngsfhopjce .gt_sourcenotes {
+#xzejblaohs .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -405,46 +409,46 @@ gt_table
   border-right-color: #D3D3D3;
 }
 
-#ngsfhopjce .gt_sourcenote {
+#xzejblaohs .gt_sourcenote {
   font-size: 90%;
   padding: 4px;
 }
 
-#ngsfhopjce .gt_left {
+#xzejblaohs .gt_left {
   text-align: left;
 }
 
-#ngsfhopjce .gt_center {
+#xzejblaohs .gt_center {
   text-align: center;
 }
 
-#ngsfhopjce .gt_right {
+#xzejblaohs .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#ngsfhopjce .gt_font_normal {
+#xzejblaohs .gt_font_normal {
   font-weight: normal;
 }
 
-#ngsfhopjce .gt_font_bold {
+#xzejblaohs .gt_font_bold {
   font-weight: bold;
 }
 
-#ngsfhopjce .gt_font_italic {
+#xzejblaohs .gt_font_italic {
   font-style: italic;
 }
 
-#ngsfhopjce .gt_super {
+#xzejblaohs .gt_super {
   font-size: 65%;
 }
 
-#ngsfhopjce .gt_footnote_marks {
+#xzejblaohs .gt_footnote_marks {
   font-style: italic;
   font-size: 65%;
 }
 </style>
-<div id="ngsfhopjce" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
+<div id="xzejblaohs" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
   <thead class="gt_header">
     <tr>
       <th colspan="5" class="gt_heading gt_title gt_font_normal" style>Lisa's 2020 Garden Harvest</th>
@@ -5936,7 +5940,7 @@ gt_table
 </table></div><!--/html_preserve-->
   
   
-  6. Use `patchwork` operators and functions to combine at least two graphs using your project data or `garden_harvest` data if your project data aren't read.
+  6. Use `patchwork` operators and functions to combine at least two graphs using your project data or `garden_harvest` data if your project data aren't ready.
 
 
 
