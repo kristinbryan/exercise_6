@@ -12,7 +12,7 @@ output:
 
 
 ```{r setup, include=FALSE}
-#knitr::opts_chunk$set(echo = TRUE, error=TRUE, message=FALSE, warning=FALSE)
+knitr::opts_chunk$set(echo = TRUE, error=TRUE, message=FALSE, warning=FALSE)
 ```
 
 ```{r libraries}
@@ -43,12 +43,20 @@ theme_set(theme_minimal())
 
 ```{r data}
 # Lisa's garden data
-garden_harvest <- read_sheet("https://docs.google.com/spreadsheets/d/1DekSazCzKqPS2jnGhKue7tLxRU3GVL1oxi-4bEM5IWw/edit?usp=sharing") %>% 
+garden_harvest <- read_sheet("https://docs.google.com/spreadsheets/d/1DekSazCzKqPS2jnGhKue7tLxRU3GVL1oxi-4bEM5IWw/edit?usp=sharing") %>%
   mutate(date = ymd(date))
 
 #COVID-19 data from the New York Times
 covid19 <- read_csv("https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-states.csv")
 
+fake_garden <- read_csv("https://github.com/llendway/scraping_etc/blob/main/2020_harvest.csv")
+
+Groceries_dataset <- read_csv("Groceries_dataset.csv")
+
+data_site <- 
+  "https://www.macalester.edu/~dshuman1/data/112/2014-Q4-Trips-History-Data.rds" 
+Trips <- readRDS(gzcon(url(data_site)))
+Stations<-read_csv("http://www.macalester.edu/~dshuman1/data/112/DC-Stations.csv")
 ```
 
 ## Put your homework on GitHub!
@@ -75,6 +83,8 @@ Once your repository is created, you should always open your **project** rather 
 
   1. This app will also use the COVID data. Make sure you load that data and all the libraries you need in the `app.R` file you create. Below, you will post a link to the app that you publish on shinyapps.io. You will create an app to compare states' cumulative number of COVID cases over time. The x-axis will be number of days since 20+ cases and the y-axis will be cumulative cases on the log scale (`scale_y_log10()`). We use number of days since 20+ cases on the x-axis so we can make better comparisons of the curve trajectories. You will have an input box where the user can choose which states to compare (`selectInput()`) and have a submit button to click once the user has chosen all states they're interested in comparing. The graph should display a different line for each state, with labels either on the graph or in a legend. Color can be used if needed. 
   
+**Link to app:** https://kristinbryan.shinyapps.io/covid_app/  
+  
 ## Warm-up exercises from tutorial
 
   2. Read in the fake garden harvest data. Find the data [here](https://github.com/llendway/scraping_etc/blob/main/2020_harvest.csv) and click on the `Raw` button to get a direct link to the data. 
@@ -84,18 +94,57 @@ Once your repository is created, you should always open your **project** rather 
   4. CHALLENGE(not graded): Write code to replicate the table shown below (open the .html file to see it) created from the `garden_harvest` data as best as you can. When you get to coloring the cells, I used the following line of code for the `colors` argument:
   
 ```{r, eval=FALSE}
-colors = scales::col_numeric(
-      palette = paletteer::paletteer_d(
-        palette = "RColorBrewer::YlGn"
-      ) %>% as.character()
+# colors = scales::col_numeric(
+#       palette = paletteer::paletteer_d(
+#         palette = "RColorBrewer::YlGn"
+#         ) %>%
+#         as.character()
 ```
-
-![](garden_table.html){width=600, height=1000}
 
 
   5. Create a table using `gt` with data from your project or from the `garden_harvest` data if your project data aren't ready.
   
-  6. Use `patchwork` operators and functions to combine at least two graphs using your project data or `garden_harvest` data if your project data aren't read.
-  
+```{r}
+gt_table <- gt(garden_harvest) %>% 
+  tab_header(title = "Lisa's 2020 Garden Harvest")
 
-**DID YOU REMEMBER TO UNCOMMENT THE OPTIONS AT THE TOP?**
+gt_table
+```
+  
+  
+  6. Use `patchwork` operators and functions to combine at least two graphs using your project data or `garden_harvest` data if your project data aren't read.
+
+
+```{r}
+g1 <- Trips %>% 
+  ggplot(aes(x = sdate)) + 
+  geom_density() +
+  labs(x = "", y = "", title = "Density of Bike Rentals over Time")
+
+g2 <- Trips %>% 
+  mutate(decimal_time = hour(sdate) + (minute(sdate)/60)) %>% 
+  ggplot(aes(x = decimal_time)) + 
+  geom_density() + 
+  labs(x = "", y = "", title = "Average Daily Density of Bike Rentals")
+
+g3 <- Trips %>% 
+  mutate(decimal_time = hour(sdate) + (minute(sdate)/60),
+         week_day = wday(sdate, label = TRUE)) %>% 
+  ggplot(aes(x = decimal_time, fill = client)) + 
+  geom_density(color = NA, alpha = .5, position = position_stack()) + 
+  labs(x = "", y = "") + 
+  facet_wrap(vars(week_day))
+
+g4 <- Trips %>% 
+  mutate(weekend = ifelse(wday(sdate, label = TRUE) %in% c("Sat", "Sun"), "Weekend", "Weekday"), 
+         decimal_time = hour(sdate) + (minute(sdate)/60)) %>% 
+  ggplot(aes(x = decimal_time, fill = client)) + 
+  geom_density(color = NA, alpha = .5) + 
+  labs(x = "", y = "") + 
+  facet_wrap(vars(weekend))
+
+g1 | (g3/g4) + 
+  plot_annotation(title = "Bike Rental Patterns")
+```
+
+
